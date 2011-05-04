@@ -1,4 +1,4 @@
 export VCPROMPT_FORMAT=" (%b%m%u)"
 alias vcbranch="vcprompt -f ' %b'"
-alias vcinfo="vcprompt -f '%m%u'"
+alias vcinfo="vcprompt -f '%m%u%a'"
 PS1="\[\e[0;35m\]\$(~/.rvm/bin/rvm-prompt) \[\e[0;37m\][\[\e[0;36m\]\W\[\e[0;33m\]\$(vcbranch)\[\e[0;31m\]\$(vcinfo)\[\e[0;36m\]\[\e[0;37m\]]\[\e[0m\] $ "
