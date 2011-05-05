@@ -5,7 +5,7 @@
 . $HOME/.bash/aliases
 . $HOME/.bash/functions
 
-for file in $HOME/.bash/machine_specific/*
+for file in $HOME/.bash/project_specific/*
 do
   . $file
 done
