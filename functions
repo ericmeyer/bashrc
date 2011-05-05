@@ -1,0 +1,7 @@
+function crypted_truths {
+    /Applications/TrueCrypt.app/Contents/MacOS/TrueCrypt -t -k "" --protect-hidden=no ~/Documents/truecrypt ~/Projects/relevance
+}
+
+function parse_git_branch {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
