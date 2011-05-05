@@ -5,6 +5,15 @@
 . $HOME/.bash/aliases
 . $HOME/.bash/functions
 
-if [ -f /usr/local/etc/bash_completion ]; then
-   . /usr/local/etc/bash_completion
+for file in $HOME/.bash/machine_specific/*
+do
+  . $file
+done
+
+BASH_COMPLETION=/usr/local/etc/bash_completion
+if [ -f $BASH_COMPLETION ]; then
+   . $BASH_COMPLETION
 fi
+
+#KEEP AT END FOR RVM
+[[ -s "/Users/ericmeyer/.rvm/scripts/rvm" ]] && source "/Users/ericmeyer/.rvm/scripts/rvm"
