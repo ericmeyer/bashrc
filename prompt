@@ -10,7 +10,7 @@ function when_ok() {
 function when_failed() {
   ret_val=$?
   if [[ "$ret_val" != "0" ]]; then
-      echo -e "$@✖"
+      echo -e "$@✖ ($ret_val)"
   fi
   return $ret_val
 }
