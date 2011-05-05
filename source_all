@@ -1,0 +1,10 @@
+. $HOME/.bash_completion.d/git-completion.bash
+. $HOME/.bash/colors
+. $HOME/.bash/environment_setup
+. $HOME/.bash/prompt
+. $HOME/.bash/aliases
+. $HOME/.bash/functions
+
+if [ -f /usr/local/etc/bash_completion ]; then
+   . /usr/local/etc/bash_completion
+fi
