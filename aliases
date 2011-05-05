@@ -1,0 +1,4 @@
+alias gp="git pull;git submodule update"
+alias cuc='cucumber -r features'
+alias vcbranch="vcprompt -f ' %b'"
+alias vcinfo="vcprompt -f '%m%u%a'"
