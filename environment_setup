@@ -1,0 +1,6 @@
+export EDITOR="mate -w"
+export POSTGRESQL_ROOT="/opt/local/var/db/postgresql81/defaultdb"
+export PGDATA="/opt/local/var/db/postgresql81/defaultdb"
+export CDPATH='.:~:/Users/ericmeyer/Projects/8thlight:/Users/ericmeyer/Projects/fun'
+
+shopt -s autocd
