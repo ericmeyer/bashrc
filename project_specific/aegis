@@ -1,0 +1,1 @@
+alias bank="java -Xmx1024m -Xss1024k -jar ~/Projects/8thlight/bank/vendor/jruby-complete-1.5.0.jar $1"

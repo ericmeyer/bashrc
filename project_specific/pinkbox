@@ -1,0 +1,21 @@
+export JRUBY_HOME=/Users/ericmeyer/Projects/jruby-1.3.1
+export PINKBOX_ROOT="/Users/ericmeyer/development/apps/pinkbox"
+export UNDERWRITING_ROOT="$PINKBOX_ROOT/underwriting_system"
+export RAPID_DECISION_ROOT="$PINKBOX_ROOT/rapid_decision"
+export PB_ADMIN_ROOT="$PINKBOX_ROOT/pb_admin"
+export RINDA_ROOT="$PINKBOX_ROOT/rinda_server"
+
+alias 203='ssh rails@amd-203.americadirect.net'
+alias 212='ssh rails@amd-212'
+alias 213='ssh rails@amd-213'
+alias 215='ssh cbuilder@amd-215'
+alias 230='ssh rails@amd-230'
+alias 231='ssh rails@amd-231'
+alias 240='ssh rails@amd-240'
+alias 241='ssh rails@amd-241'
+alias pr1='ssh rails@pr-ra-1'
+alias pr2='ssh rails@pr-ra-2'
+alias pr3='ssh rails@pr-ra-3'
+alias tes='ssh rails@tes-uat'
+alias build='ssh cbuilder@10.194.5.190'
+alias tunnel_build="ssh -l rails -L 8080:10.194.5.190:8080 amd-203.americadirect.net"
