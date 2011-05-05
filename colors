@@ -1,3 +1,4 @@
+# VARS FOR COLOR CODES
 BLACK="\e[0;30m"
 RED="\e[0;31m"
 GREEN="\e[0;32m"
@@ -16,3 +17,11 @@ LIGHT_CYAN="\e[1;36m"
 WHITE="\e[1;37m"
 
 RESET="\e[0m"
+
+# LS COLOR SETUP
+alias ls='ls -G'
+export LSCOLORS='gxhxfxfxcxdxdxhbadbxbx'
+
+# GREP COLOR SETUP
+export GREP_COLOR='00;37;42'
+export GREP_OPTIONS='--color=auto'
