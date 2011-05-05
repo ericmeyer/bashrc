@@ -15,4 +15,4 @@ function when_failed() {
   return $ret_val
 }
 
-PS1="\$(when_ok '\[$GREEN\]')\$(when_failed '\[$RED\]') \[$WHITE\][\[$CYAN\]\W\[$YELLOW\]\$(vcbranch)\[$RED\]\$(vcinfo)\[$WHITE\]] $ \[$RESET\]"
+PS1="\$(when_ok '\[$GREEN\]')\$(when_failed '\[$LIGHT_RED\]') \[$WHITE\][\[$CYAN\]\W\[$YELLOW\]\$(vcbranch)\[$LIGHT_RED\]\$(vcinfo)\[$WHITE\]] $ \[$RESET\]"
