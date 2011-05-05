@@ -1,4 +1,35 @@
-export VCPROMPT_FORMAT=" (%b%m%u)"
+# BLACK="tput setf 0"
+# BLUE="tput setf 1"
+# # GREEN="tput setf 2"
+# Green="\033[0;32m"
+# LightRed="\033[1;31m"
+# CYAN="tput setf 3"
+# RED="tput setf 4"
+# MAGENTA="tput setf 5"
+# YELLOW="tput setf 6"
+# WHITE="tput setf 7"
+# 
+# RETURN="tput sgr0"
+# BOLD="tput bold"
+# REV="tput rev"
+
+# x, ×, X, ✕, ☓, ✖, ✗, ✘,
+
+function when_ok() {
+  ret_val=$?
+  if [[ "$ret_val" = "0" ]]; then
+      echo -e "$@✓"
+  fi
+  return $ret_val
+}
+function when_failed() {
+  ret_val=$?
+  if [[ "$ret_val" != "0" ]]; then
+      echo -e "$@✖"
+  fi
+  return $ret_val
+}
+
 alias vcbranch="vcprompt -f ' %b'"
 alias vcinfo="vcprompt -f '%m%u%a'"
-PS1="\[\e[0;35m\]\$(~/.rvm/bin/rvm-prompt) \[\e[0;37m\][\[\e[0;36m\]\W\[\e[0;33m\]\$(vcbranch)\[\e[0;31m\]\$(vcinfo)\[\e[0;36m\]\[\e[0;37m\]]\[\e[0m\] $ "
+PS1="\$(when_ok '\[\e[0;32m\]')\$(when_failed '\[\e[0;31m\]') \[\e[0;37m\][\[\e[0;36m\]\W\[\e[0;33m\]\$(vcbranch)\[\e[0;31m\]\$(vcinfo)\[\e[0;36m\]\[\e[0;37m\]]\[\e[0m\] $ "
