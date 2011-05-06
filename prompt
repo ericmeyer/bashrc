@@ -1,16 +1,18 @@
+HAPPY_FACE="✓"
 function when_ok() {
   ret_val=$?
   if [[ "$ret_val" = "0" ]]; then
-      echo -e "$@✓"
+      echo -e "$@$HAPPY_FACE"
   fi
   return $ret_val
 }
 
 # x, ×, X, ✕, ☓, ✖, ✗, ✘,
+SAD_FACE="✖"
 function when_failed() {
   ret_val=$?
   if [[ "$ret_val" != "0" ]]; then
-      echo -e "$@✖ ($ret_val)"
+      echo -e "$@$SAD_FACE"
   fi
   return $ret_val
 }
