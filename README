@@ -13,6 +13,7 @@
 * add the following line to the end of your bash_login, bash_profile or bashrc file:
   . $HOME/.bash/source_all
 * custom stuff should go in files in the $HOME/.bash/machine_specific/ dir or in the original bash_login/bashrc file
+* ln -s ~/.bash/.gitconfig ~/.gitconfig
 
 ## Notes
 
