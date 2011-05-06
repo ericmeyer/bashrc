@@ -36,4 +36,4 @@ hg_added() {
 
 alias vcbranch="vcprompt -f ' %b'"
 alias vcinfo="vcprompt -f '%m%u%a'"
-PS1="\$(when_ok '\[$LIGHT_GREEN\]')\$(when_failed '\[$LIGHT_RED\]') \[$WHITE\]\! [\[$CYAN\]\W\[$YELLOW\]\$(vcbranch)\[$LIGHT_RED\]\$(vcinfo)\$(hg_modified)\$(hg_untracked)\$(hg_added)\[$WHITE\]] $ \[$RESET\]"
+PS1="\[$DARK_GRAY\](\!) \$(when_ok '\[$LIGHT_GREEN\]')\$(when_failed '\[$LIGHT_RED\]') \[$WHITE\][\[$CYAN\]\W\[$YELLOW\]\$(vcbranch)\[$LIGHT_RED\]\$(vcinfo)\$(hg_modified)\$(hg_untracked)\$(hg_added)\[$WHITE\]] $ \[$RESET\]"
