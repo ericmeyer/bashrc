@@ -1,7 +1,5 @@
 alias gp="git pull;git submodule update"
 alias cuc='cucumber -r features'
-alias vcbranch="vcprompt -f ' %b'"
-alias vcinfo="vcprompt -f '%m%u%a'"
 alias svnst="svn st|grep -v 'X'|grep -v 'Performing'|grep -v '^$'"
 alias svnaddall="svn st | grep '^\?' | tr '^\?' ' ' | sed 's/[\\t]*//' | sed 's/[ ]/\\ /g' | xargs svn add"
 alias jrake='jruby -S rake'

@@ -15,10 +15,23 @@ function when_failed() {
   return $ret_val
 }
 
-hg_dirty() {
-    hg status 2> /dev/null \
-    | awk '$1 == "?" { print "?" } $1 != "?" { print "!" }' \
+hg_modified() {
+    hg status --modified 2> /dev/null \
+    | awk '$1 == "M" { print "+" }' \
     | sort | uniq | head -c1
 }
+hg_untracked() {
+  hg status --unknown 2> /dev/null \
+  | awk '$1 == "?" { print "?" }' \
+  | sort | uniq | head -c1
+}
 
-PS1="\$(when_ok '\[$LIGHT_GREEN\]')\$(when_failed '\[$LIGHT_RED\]') \[$WHITE\][\[$CYAN\]\W\[$YELLOW\]\$(vcbranch)\[$LIGHT_RED\]\$(vcinfo)\$(hg_dirty)\[$WHITE\]] $ \[$RESET\]"
+hg_added() {
+  hg status --added 2> /dev/null \
+  | awk '$1 == "A" { print "*" }' \
+  | sort | uniq | head -c1
+}
+
+alias vcbranch="vcprompt -f ' %b'"
+alias vcinfo="vcprompt -f '%m%u%a'"
+PS1="\$(when_ok '\[$LIGHT_GREEN\]')\$(when_failed '\[$LIGHT_RED\]') \[$WHITE\][\[$CYAN\]\W\[$YELLOW\]\$(vcbranch)\[$LIGHT_RED\]\$(vcinfo)\[$WHITE\]] $ \[$RESET\]"
