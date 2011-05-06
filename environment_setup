@@ -1,7 +1,3 @@
-export PATH=$HOME/bin:/usr/local/git/bin:/opt/local/bin:/opt/local/sbin:/opt/local/lib/postgresql81/bin:/usr/local/mysql/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$JRUBY_HOME/bin:$ANDRIOD_ROOT/tools:/Users/ericmeyer/Downloads/mongodb-osx-x86_64-1.6.1/bin
-export EDITOR="mate -w"
-export POSTGRESQL_ROOT="/opt/local/var/db/postgresql81/defaultdb"
-export PGDATA="/opt/local/var/db/postgresql81/defaultdb"
 export CDPATH='.:~:/Users/ericmeyer/Projects/8thlight:/Users/ericmeyer/Projects/fun'
 
 shopt -s autocd

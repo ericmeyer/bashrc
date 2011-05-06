@@ -1,19 +1,20 @@
-. $HOME/.bash_completion.d/git-completion.bash
+for file in $HOME/.bash/machine_specific/*
+do
+  . $file
+done
+
+. $HOME/.bash/git-completion
 . $HOME/.bash/colors
 . $HOME/.bash/environment_setup
 . $HOME/.bash/prompt
 . $HOME/.bash/aliases
 . $HOME/.bash/functions
 
-for file in $HOME/.bash/project_specific/*
-do
-  . $file
-done
 
-BASH_COMPLETION=/usr/local/etc/bash_completion
+BASH_COMPLETION=$HOME/.bash/bash_completion
 if [ -f $BASH_COMPLETION ]; then
    . $BASH_COMPLETION
 fi
 
 #KEEP AT END FOR RVM
-[[ -s "/Users/ericmeyer/.rvm/scripts/rvm" ]] && source "/Users/ericmeyer/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
