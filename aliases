@@ -3,3 +3,5 @@ alias cuc='cucumber -r features'
 alias svnst="svn st|grep -v 'X'|grep -v 'Performing'|grep -v '^$'"
 alias svnaddall="svn st | grep '^\?' | tr '^\?' ' ' | sed 's/[\\t]*//' | sed 's/[ ]/\\ /g' | xargs svn add"
 alias jrake='jruby -S rake'
+alias gdc='git diff --cached|mate'
+alias gdm='git diff|mate'
