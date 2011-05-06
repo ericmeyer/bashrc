@@ -1,7 +1,7 @@
 ## Prerequisites
 
 * Bash 3.2+
-* vcprompt - http://vc.gerg.ca/hg/vcprompt/
+* vcprompt - https://github.com/ericmeyer/vcprompt
 * rvm
 * git
 * hg
