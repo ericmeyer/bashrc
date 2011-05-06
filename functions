@@ -5,3 +5,8 @@ function crypted_truths {
 function parse_git_branch {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
+
+function fun {
+  export HAPPY_FACE='^_^'
+  export SAD_FACE='o_O'
+}
