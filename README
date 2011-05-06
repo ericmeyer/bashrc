@@ -1,6 +1,6 @@
 ## Prerequisites
 
-* Bash 3.2+
+* Bash 4.0+
 * vcprompt - https://github.com/ericmeyer/vcprompt
 * rvm
 * git
@@ -10,7 +10,7 @@
 
 * clone project into your home dir.  (The project assumes it resides in $HOME/.bash)
 * mkdir $HOME/.bash/machine_specific
-* add the following line to the end of your bash_login/bashrc file:
+* add the following line to the end of your bash_login, bash_profile or bashrc file:
   . $HOME/.bash/source_all
 * custom stuff should go in files in the $HOME/.bash/machine_specific/ dir or in the original bash_login/bashrc file
 
