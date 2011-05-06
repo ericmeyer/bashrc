@@ -1,3 +1,0 @@
-export CDPATH='.:~:/Users/ericmeyer/Projects/8thlight:/Users/ericmeyer/Projects/fun'
-
-shopt -s autocd
