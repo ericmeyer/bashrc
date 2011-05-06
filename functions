@@ -10,3 +10,7 @@ function fun {
   export HAPPY_FACE='^_^'
   export SAD_FACE='o_O'
 }
+function unfun {
+  export HAPPY_FACE="✓"
+  export SAD_FACE="✖"
+}
