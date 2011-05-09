@@ -8,13 +8,6 @@
 
 ## Use
 
-* clone project into your home dir.  (The project assumes it resides in $HOME/.bash)
-* mkdir $HOME/.bash/machine_specific
-* add the following line to the end of your bash_login, bash_profile or bashrc file:
-  . $HOME/.bash/source_all
-* custom stuff should go in files in the $HOME/.bash/machine_specific/ dir or in the original bash_login/bashrc file
-* ln -s ~/.bash/.gitconfig ~/.gitconfig
-
-## Notes
-
-* set your PATH environment variable!  (It is untouched by default.)
+* Run install.sh and follow output instructions
+* custom stuff should in the original bash_login (or whatever) file
+* ln -s ~/.bash/config_files/.gitconfig ~/.gitconfig
