@@ -1,0 +1,13 @@
+function choice {
+  CHOICE=''
+  local prompt="$*"
+  local answer
+
+  read -p "$prompt" answer
+  
+  case "$answer" in
+    [yY1] ) CHOICE='y';;
+    [nN0] ) CHOICE='n';;
+    *     ) CHOICE="$answer";;
+  esac
+}
