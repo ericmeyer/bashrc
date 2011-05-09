@@ -5,3 +5,4 @@ alias svnaddall="svn st | grep '^\?' | tr '^\?' ' ' | sed 's/[\\t]*//' | sed 's/
 alias jrake='jruby -S rake'
 alias gdc='git diff --cached|mate'
 alias gdm='git diff|mate'
+alias hpu='hg pull -u'
