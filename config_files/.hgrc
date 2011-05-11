@@ -1,0 +1,23 @@
+[ui]
+username = emeyer
+verbose = True
+
+[extensions]
+color =
+
+[color]
+status.modified = yellow
+status.added = green
+status.removed = green
+status.deleted = red
+status.unknown = cyan
+status.ignored = white
+diff.diffline = yellow
+diff.extended = yellow
+diff.file_a = red
+diff.file_b = green
+diff.hunk = magenta
+diff.deleted = bold red
+diff.inserted = bold green
+diff.changed = white
+diff.trailingwhitespace = bold red_background
