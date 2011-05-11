@@ -31,6 +31,7 @@ if [[ -f $HOME/.hgrc ]]; then
       echo "  Skipping .hgrc";;
   esac
 else
+  echo "  linking .hgrc"
   ln -s $BASH_DIR/config_files/.hgrc $HOME/.hgrc
 fi
 
