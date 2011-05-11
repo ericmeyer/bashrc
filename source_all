@@ -1,12 +1,10 @@
-BASH_DIR="`pwd`/.bash"
+. $HOME/.bash/git-completion
+. $HOME/.bash/colors
+. $HOME/.bash/environment_setup
+. $HOME/.bash/prompt
+. $HOME/.bash/aliases
 
-. $BASH_DIR/git-completion
-. $BASH_DIR/colors
-. $BASH_DIR/environment_setup
-. $BASH_DIR/prompt
-. $BASH_DIR/aliases
-
-BASH_COMPLETION=$BASH_DIR/bash_completion
+BASH_COMPLETION=$HOME/.bash/bash_completion
 if [ -f $BASH_COMPLETION ]; then
    . $BASH_COMPLETION
 fi
