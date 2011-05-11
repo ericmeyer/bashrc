@@ -19,7 +19,21 @@ else
   ln -s $BASH_DIR/config_files/.gitconfig $HOME/.gitconfig
 fi
 
-echo ''
+if [[ -f $HOME/.hgrc ]]; then
+  printf ".hgrc exists.  Overwrite? (Y/n): "
+  choice
+  case "$CHOICE" in
+    [y] )
+      echo "  linking .hgrc"
+      rm $HOME/.hgrc
+      ln -s $BASH_DIR/config_files/.hgrc $HOME/.hgrc;;
+    [n] )
+      echo "  Skipping .hgrc";;
+  esac
+else
+  ln -s $BASH_DIR/config_files/.hgrc $HOME/.hgrc
+fi
+
 echo ''
 echo '***************************************************'
 echo 'Add the following to your bash config file:'
