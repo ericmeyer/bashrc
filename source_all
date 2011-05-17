@@ -3,6 +3,7 @@
 . $HOME/.bash/environment_setup
 . $HOME/.bash/prompt
 . $HOME/.bash/aliases
+. $HOME/.bash/functions
 
 BASH_COMPLETION=$HOME/.bash/bash_completion
 if [ -f $BASH_COMPLETION ]; then
