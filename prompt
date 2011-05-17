@@ -19,7 +19,7 @@ function when_failed() {
 
 hg_all() {
   hg status 2> /dev/null \
-  | awk '$1 == "M" { print "+" } $1 == "?" { print "?"} $1 == "A" { print "*"}' \
+  | awk '$1 == "M" { print "+" } $1 == "?" { print "?"} $1 == "A" { print "*"} $1 == "R" { print "*"}' \
   | uniq | tr -d '\n'
 }
 alias vcbranch="vcprompt -f ' %b'"
