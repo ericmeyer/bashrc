@@ -8,4 +8,6 @@
 
 ## Use
 
-* Run install.sh and follow output instructions
+* clone this repo into $HOME/.bash
+* Add the following to your bash config file:
+  * source $HOME/.bash/source_all
