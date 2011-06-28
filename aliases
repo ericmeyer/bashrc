@@ -10,4 +10,5 @@ alias hso='hg st; hg out'
 alias hdm='hg diff|mate'
 alias bi='bundle install'
 alias bu='bundle update'
+alias bx='bundle exec'
 alias redcar=wrapped_redcar
