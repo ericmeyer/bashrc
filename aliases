@@ -12,3 +12,4 @@ alias bi='bundle install'
 alias bu='bundle update'
 alias bx='bundle exec'
 alias redcar=wrapped_redcar
+gib="gem install bundler --no-ri --no-rdoc"
