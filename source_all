@@ -10,7 +10,5 @@ if [ -f $BASH_COMPLETION ]; then
    . $BASH_COMPLETION
 fi
 
-shopt -s autocd
-
 #KEEP AT END FOR RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

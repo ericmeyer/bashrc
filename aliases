@@ -1,15 +1,26 @@
-alias gp="git pull;git submodule update"
 alias cuc='cucumber -r features'
+alias jrake='jruby -S rake'
+
 alias svnst="svn st|grep -v 'X'|grep -v 'Performing'|grep -v '^$'"
 alias svnaddall="svn st | grep '^\?' | tr '^\?' ' ' | sed 's/[\\t]*//' | sed 's/[ ]/\\ /g' | xargs svn add"
-alias jrake='jruby -S rake'
+alias siw="svn propedit svn:ignore ."
+alias sdm="svn diff|mate"
+
+
+alias gp="git pull;git submodule update"
 alias gdc='git diff --cached|mate'
 alias gdm='git diff|mate'
+
 alias hpu='hg pull -u'
 alias hso='hg st; hg out'
 alias hdm='hg diff|mate'
+alias hgr="hg revert --no-backup"
+
 alias bi='bundle install'
 alias bu='bundle update'
-alias bx='bundle exec'
+alias be="bundle exec"
+alias bx="bundle exec"
+alias bo="bundle open"
+alias gib="gem install bundler --no-ri --no-rdoc"
+
 alias redcar=wrapped_redcar
-gib="gem install bundler --no-ri --no-rdoc"
