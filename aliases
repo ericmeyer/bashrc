@@ -24,3 +24,4 @@ alias bo="bundle open"
 alias gib="gem install bundler --no-ri --no-rdoc"
 
 alias redcar=wrapped_redcar
+alias brc="be rspec -c"
