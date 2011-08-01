@@ -1,4 +1,4 @@
-alias cuc='cucumber -r features'
+alias cuc='clear; cucumber -r features'
 alias jrake='jruby -S rake'
 
 alias svnst="svn st|grep -v 'X'|grep -v 'Performing'|grep -v '^$'"
@@ -24,4 +24,4 @@ alias bo="bundle open"
 alias gib="gem install bundler --no-ri --no-rdoc"
 
 alias redcar=wrapped_redcar
-alias brc="be rspec -c"
+alias brc="clear; be rspec -c"
