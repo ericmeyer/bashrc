@@ -1,7 +1,7 @@
 alias cuc='clear; cucumber -r features'
 alias jrake='jruby -S rake'
 
-alias svnst="svn st|grep -v 'X'|grep -v 'Performing'|grep -v '^$'"
+alias svnst="svn st|grep -v '^X'|grep -v '^Performing'|grep -v '^$'"
 alias svnaddall="svn st | grep '^\?' | tr '^\?' ' ' | sed 's/[\\t]*//' | sed 's/[ ]/\\ /g' | xargs svn add"
 alias siw="svn propedit svn:ignore ."
 alias sdm="svn diff|mate"
