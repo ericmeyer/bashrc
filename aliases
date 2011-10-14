@@ -7,7 +7,7 @@ alias siw="svn propedit svn:ignore ."
 alias sdm="svn diff|mate"
 
 
-alias gp="git pull;git submodule update"
+alias gp="git pull;git submodule init;git submodule update"
 alias gdc='git diff --cached|mate'
 alias gdm='git diff|mate'
 
@@ -25,3 +25,4 @@ alias gib="gem install bundler --no-ri --no-rdoc"
 
 alias redcar=wrapped_redcar
 alias brc="clear; be rspec -c"
+alias crb="clear; ruby"
