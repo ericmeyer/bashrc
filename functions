@@ -35,3 +35,11 @@ function sg {
     script/generate $@
   fi
 }
+
+function br {
+  if [ -e Gemfile ]; then
+    bundle exec rake $@
+  else
+    rake $@
+  fi
+}
