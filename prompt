@@ -1,4 +1,5 @@
-HAPPY_FACE="✓"
+# HAPPY_FACE="✓"
+HAPPY_FACE="^_^"
 function when_ok() {
   ret_val=$?
   if [[ "$ret_val" = "0" ]]; then
@@ -8,7 +9,8 @@ function when_ok() {
 }
 
 # x, ×, X, ✕, ☓, ✖, ✗, ✘,
-SAD_FACE="✖"
+# SAD_FACE="✖"
+SAD_FACE="O_o"
 function when_failed() {
   ret_val=$?
   if [[ "$ret_val" != "0" ]]; then
