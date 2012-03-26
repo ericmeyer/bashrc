@@ -7,9 +7,10 @@ alias siw="svn propedit svn:ignore ."
 alias sdm="svn diff|mate"
 
 
-alias gp="git pull;git submodule init;git submodule update"
+alias gp="git pull;git submodule init -q;git submodule update"
 alias gdc='git diff --cached|mate'
 alias gdm='git diff|mate'
+alias gsm='git show|mate'
 
 alias hpu='hg pull -u'
 alias hso='hg st; hg out'
