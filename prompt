@@ -19,6 +19,13 @@ function when_failed() {
   return $ret_val
 }
 
+iterm_title() {
+  export BASE_NAME=`basename $PWD`
+  echo -ne "\033]0;$BASE_NAME\\007";
+}
+
+PROMPT_COMMAND='iterm_title'
+
 hg_all() {
   hg status 2> /dev/null \
   | awk '$1 == "M" { print "+" } $1 == "?" { print "?"} $1 == "A" { print "*"} $1 == "R" { print "*"}' \
