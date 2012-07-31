@@ -20,7 +20,7 @@ function when_failed() {
 }
 
 iterm_title() {
-  if [[ `hostname` == "eric-mba.local" ]]; then
+  if [[ "$SSH_CONNECTION" == "" ]]; then
     export TAB_TITLE=`basename $PWD`
   else
     export TAB_TITLE=`hostname`
