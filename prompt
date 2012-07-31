@@ -20,8 +20,12 @@ function when_failed() {
 }
 
 iterm_title() {
-  export BASE_NAME=`basename $PWD`
-  echo -ne "\033]0;$BASE_NAME\\007";
+  if [[ `hostname` == "eric-mba.local" ]]; then
+    export TAB_TITLE=`basename $PWD`
+  else
+    export TAB_TITLE=`hostname`
+  fi
+  echo -ne "\033]0;$TAB_TITLE\\007";
 }
 
 PROMPT_COMMAND='iterm_title'
