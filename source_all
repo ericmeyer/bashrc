@@ -4,6 +4,7 @@
 . $HOME/.bash/prompt
 . $HOME/.bash/aliases
 . $HOME/.bash/functions
+. $HOME/.bash/cd_hook
 
 BASH_COMPLETION=$HOME/.bash/bash_completion
 if [ -f $BASH_COMPLETION ]; then
