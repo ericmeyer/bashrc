@@ -5,7 +5,6 @@
     * https://github.com/ericmeyer/vcprompt
  * RVM
  * Git
- * Mercurial
 
 # Use
 
