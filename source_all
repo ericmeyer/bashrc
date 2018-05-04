@@ -10,6 +10,3 @@ BASH_COMPLETION=$HOME/.bash/bash_completion
 if [ -f $BASH_COMPLETION ]; then
    . $BASH_COMPLETION
 fi
-
-#KEEP AT END FOR RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

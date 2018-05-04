@@ -1,8 +1,11 @@
-cd() {
-  builtin cd "$1"
+function set_nvm() {
   if [[ -f .nvmrc ]]; then
     if [[ -d "$HOME/.nvm" ]]; then
       nvm use `cat .nvmrc`
     fi
   fi
+}
+cd() {
+  builtin cd "$1"
+  set_nvm
 }
