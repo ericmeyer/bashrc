@@ -1,14 +1,15 @@
-. $HOME/.bash/git-completion
-. $HOME/.bash/colors
-. $HOME/.bash/environment_setup
-. $HOME/.bash/prompt
-. $HOME/.bash/aliases
-. $HOME/.bash/functions
-. $HOME/.bash/cd_hook
+. $HOME/.bash/src/git-completion
+. $HOME/.bash/src/colors
+. $HOME/.bash/src/environment_setup
+. $HOME/.bash/src/prompt
+. $HOME/.bash/src/aliases
+. $HOME/.bash/src/functions
+. $HOME/.bash/src/cd_hook
+. $HOME/.bash/src/path
 
-BASH_COMPLETION=$HOME/.bash/bash_completion
+BASH_COMPLETION=$HOME/.bash/src/bash_completion
 if [ -f $BASH_COMPLETION ]; then
-   . $BASH_COMPLETION
+  . $BASH_COMPLETION
 fi
 
 #KEEP AT END FOR RVM
