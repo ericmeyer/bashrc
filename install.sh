@@ -21,11 +21,11 @@ else
 fi
 
 SOURCE_LINE='source "$HOME/.bash/source_all"'
-if grep -q "$SOURCE_LINE" "$HOME/.bashrc"; then
+if grep -q "$SOURCE_LINE" "$HOME/.bash_profile"; then
   echo '====> Bash files already sourced'
 else
   echo '====> Sourcing bash files'
-  echo 'source "$HOME/.bash/source_all"' >> .bashrc
+  echo 'source "$HOME/.bash/source_all"' >> .bash_profile
 fi
 
 
